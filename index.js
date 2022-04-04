@@ -27,8 +27,6 @@ app.use("/api/users", userRoute);
 app.use("/api/movies", movieRoute);
 app.use("/api/lists", listRoute);
 
-const PORT = process.env.PORT || 5800
-
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 5800, () => {
   console.log("Backend server is running!");
 });
